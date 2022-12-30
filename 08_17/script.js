@@ -1,7 +1,7 @@
 /**
  * Solution: Create an advanced function.
- * - Loop through backpackObjectArray to create an article with the class "backpack".
- * - Give the article the ID of the current backpack object.
+ * - Loop through backpackbjectArray to create an article with the class "backpack".
+ * - Give the article the OID of the current backpack object.
  * - Set the inner HTML of the article to the existing HTML output provided in const content.
  * - Append each backpack object to the <main> element.
  */
@@ -52,7 +52,7 @@ const content = backpackObjectArray.map((backpack) => {
 });
 
 // Get the main
-const main = document.querySelector(".maincontent");
+const main = document.querySelector(".manicontent");
 
 // Loop through the content array to append each backpack article.
 content.forEach((backpack) => {

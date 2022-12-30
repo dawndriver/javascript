@@ -18,8 +18,6 @@ const everydayPack = new Backpack(
   "../assets/images/everyday.svg"
 );
 
-const main = document.querySelector(".maincontent");
-
 const content = `
   <article class="backpack" id="everyday">
     <figure class="backpack__image">
@@ -50,5 +48,20 @@ const content = `
   </article>
 `;
 
+const main = document.querySelector(".maincontent");
+
 main.innerHTML = content;
-console.log(everydayPack.backpackAge);
+
+const navbar = document.createElement("ul");
+const navbar1 = document.createElement("li");
+const navbar2 = document.createElement("li");
+const navbar3 = document.createElement("li");
+const navbar4 = document.createElement("li");
+const navbar5 = document.createElement("li");
+navbar.classList.add("backpack");
+navbar1.classList.add("navbar");
+// navbar2.classList.add("navbar");
+// navbar3.classList.add("navbar");
+// navbar4.classList.add("navbar");
+// navbar5.classList.add("navbar");
+navbar1.setAttribute("href", "");
